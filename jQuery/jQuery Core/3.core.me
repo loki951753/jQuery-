@@ -45,7 +45,7 @@ rdashAlpha = /-([\da-z])/gi,
 
 ### 3.无new创建jQuery类
 您可以看看《JavaScript高级程序设计》函数构造的相关章节，图例非常清晰。网上大部分博客在谈及jQuery类时，画的非常恣情，各种看不懂。我以《JavaScript高级程序设计》中的图例习惯，画了下面这张图。
-
+![此处输入图片的描述][1]
 
 从头开始分析，如果我们需要无new构建jQuery对象，达到我们熟悉的$()、jQuery()的效果，那么：
 
@@ -68,3 +68,6 @@ jQuery需要提供一个扩展机制，将新功能添加到框架的命名空�
 
 ### 6.init函数分析
 JavaScript没有函数签名，因此无法实现函数重载。为了实现根据不同参数初始化不同的jQuery对象，init函数使用了一串if来判断传入的参数。具体代码使用测试用例逐一覆盖init的if语句。
+
+
+  [1]: https://raw.githubusercontent.com/loki951753/jQuery-source-reading-blog/master/jQuery/jQuery%20Core/jQuery%E5%8E%9F%E5%9E%8B%E5%AF%B9%E8%B1%A1.PNG
